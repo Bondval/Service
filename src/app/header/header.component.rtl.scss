@@ -1,0 +1,31 @@
+:host-context(.rtl) header{
+
+  .btn-login{
+    margin-right:20px;
+  }
+
+  .account-dropdown{
+    margin-right: 5em;
+  }
+
+  .list-unstyled{
+    padding-right:0;
+  }
+
+  .ml-auto{
+    margin-left:0 !important;
+    margin-right:auto;
+  }
+
+  .avatar {
+    margin-left: 10px;
+  }
+
+  .item-logout{
+    span{
+      text-align:left;
+    }
+  }
+}
+
+

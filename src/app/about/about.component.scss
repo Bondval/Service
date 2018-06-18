@@ -1,0 +1,13 @@
+.divimage {
+  visibility: visible;
+  opacity:1;
+  position:absolute;
+  background-size:cover;
+  transition:transform .5s;
+}
+
+.parallax-block{
+  height:auto;
+  overflow:hidden;
+  position:relative;
+}

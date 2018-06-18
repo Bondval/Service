@@ -1,0 +1,23 @@
+$primary-color:#006e44;
+
+.active{
+  background-color:$primary-color !important;
+}
+
+.list-unstyled {
+  padding-right: 0;
+}
+
+.nav{
+  border-bottom-color:$primary-color !important;
+  padding-right:0;
+}
+
+.u-btn-primary{
+  background-color:$primary-color;
+  border-color:$primary-color;
+  &:hover{
+    color:$primary-color;
+    background-color:white;
+  }
+}

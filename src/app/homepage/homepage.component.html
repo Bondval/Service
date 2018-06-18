@@ -1,0 +1,296 @@
+<section class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-min-height-100vh g-flex-centered g-py-100" style="background-image: url(../../assets/image/cleaning.jpg);">
+    <div class="container g-color-white text-center g-z-index-1">
+    <div class="mb-5">
+        <h2 class="g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-mb-30">
+            We are
+            <span class="u-text-animation u-text-animation--typing"></span>
+        </h2>
+        <p class="g-font-size-24">Clean and fully responsive Template.</p>
+    </div>
+
+    <a class="btn-started js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13"
+       (click)="modalService.callOpenLogin()"
+       data-target="#content">Clean Now</a>
+</div>
+</section>
+
+<div class="search-engine">
+  <div>
+    <label>Street</label>
+    <input class="text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Street">
+  </div>
+  <div>
+    <label>Bedrooms</label>
+    <select class="form-control rounded-0 g-brd-primary--focus" >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6+</option>
+    </select>
+  </div>
+  <div>
+    <label>Bathrooms</label>
+    <select class="form-control rounded-0 g-brd-primary--focus" >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6+</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Service Level</label>
+    <select class="form-control rounded-0 g-brd-primary--focus">
+      <option>Light Clean</option>
+      <option>Standard Clean</option>
+      <option>New House</option>
+    </select>
+  </div>
+  <div class="extras">
+    <label>Extras</label>
+    <a href="#" class="full-width btn btn-lg u-btn-outline-primary g-mr-10 g-mb-15" (click)="togglePopup(true)">Select</a>
+  </div>
+  <div class="button-go">
+    <a href="#" class="full-width btn btn-lg u-btn-outline-primary u-btn-hover-v1-4 g-mr-10 g-mb-15">Go</a>
+  </div>
+  <!-- Extras popup -->
+  <div  id="openModal" class="modalDialog" [ngClass]="{open:popup}" (click)="$event.target.id == 'openModal' ? togglePopup(false) : void" >
+    <div  [@AnimationTop]='animationState'>
+      <form class="window window_small">
+        <h3 class="align-center">Select</h3>
+        <button type="button" class="close" (click)="togglePopup(false)">
+          <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+      </form>
+    </div>
+  </div>
+  <!-- End Extras popup -->
+</div>
+
+<div class=" row no-gutters g-brd-bottom--lg g-brd-gray-light-v4">
+    <div class="col-lg-4 g-pa-60">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+<span class="d-inline-block u-icon-v3 g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
+<i class="icon-finance-086 u-line-icon-pro"></i>
+</span>
+            <h3 class="h4 g-color-gray-dark-v2 mb-3">Creative ideas</h3>
+            <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+
+    <div class="col-lg-4 g-brd-gray-light-v4 g-pa-60">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+<span class="d-inline-block u-icon-v3 g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
+<i class="icon-education-031 u-line-icon-pro"></i>
+</span>
+            <h3 class="h4 g-color-gray-dark-v2 mb-3">Excellent features</h3>
+            <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+
+    <div class="col-lg-4 g-brd-gray-light-v4 g-pa-60">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+<span class="d-inline-block u-icon-v3 g-font-size-36 g-bg-primary g-color-white rounded-circle g-mb-20">
+<i class="icon-finance-222 u-line-icon-pro"></i>
+</span>
+            <h3 class="h4 g-color-gray-dark-v2 mb-3">Fully responsive</h3>
+            <p class="mb-0">We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+</div>
+
+<section class="g-brd-bottom--lg g-brd-gray-light-v4 g-py-100">
+    <div class="container">
+        <header class="text-center g-width-60x--md mx-auto g-mb-60">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">About Our Company</h2>
+            </div>
+            <p class="lead">Unify <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <img class="img-fluid" src="../../assets/image/inline5.png" alt="Image description">
+            </div>
+
+            <div class="col-lg-6 align-self-center g-pl-30--lg g-mb-50 g-mb-0--lg">
+                <p class="g-mb-30">Unify <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30 g-mb-0--sm">
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Based on Botostrap 4
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Responsive Bootstrap Template
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Semantic HTML5/CSS3 Codes
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Great SASS Architecture
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled g-color-gray-dark-v4">
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Over 2000+ UI Components
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Beautiful Eye Catching Demos
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Over 30+ Thematic Examples
+                            </li>
+                            <li class="d-flex g-mb-10">
+                                <i class="icon-arrow-right-circle g-color-primary g-mt-5 g-mr-10"></i> Comes with Premium Plugins
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="g-py-100">
+    <div class="container">
+        <header class="text-center g-width-60x--md mx-auto g-mb-80">
+            <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
+                <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">Our Services</h2>
+            </div>
+            <p class="lead">Unify <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-4 g-mb-60 g-mb-0--lg">
+                <!-- Icon Blocks -->
+                <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
+<span class="u-icon-v3 g-color-white g-bg-primary g-pull-50x-up rounded-circle">
+<i class="icon-finance-167 u-line-icon-pro"></i>
+</span>
+                    <h3 class="h4 g-color-gray-dark-v2 g-mb-10">More Income</h3>
+                    <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                    <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4 g-mb-60 g-mb-0--lg">
+                <!-- Icon Blocks -->
+                <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
+<span class="u-icon-v3  g-color-white g-bg-primary g-pull-50x-up rounded-circle">
+<i class="icon-finance-128 u-line-icon-pro"></i>
+</span>
+                    <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Instant Cash</h3>
+                    <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                    <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Icon Blocks -->
+                <div class="g-brd-around g-brd-gray-light-v4 text-center rounded g-px-30 g-pb-30">
+<span class="u-icon-v3  g-color-white g-bg-primary g-pull-50x-up rounded-circle">
+<i class="icon-finance-218 u-line-icon-pro"></i>
+</span>
+                    <h3 class="h4 g-color-gray-dark-v2 g-mb-10">Friendly Support</h3>
+                    <p class="g-mb-15">Curabitur ut augue at mi eleifend lobortis. Ut tincidunt lacinia nisi pharetra.</p>
+                    <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container g-pb-60">
+  <!-- Heading -->
+  <div class="row justify-content-center text-center g-mb-50">
+    <div class="col-lg-9">
+      <h2 class="h2 g-color-black g-font-weight-600 mb-2">Follow the Latest News</h2>
+      <div class="d-inline-block g-width-30 g-height-2 g-bg-primary mb-2"></div>
+      <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+    </div>
+  </div>
+  <!-- End Heading -->
+
+  <div class="row">
+    <div class="col-sm-6 col-lg-4 g-mb-30">
+      <!-- Blog Grid Overlap Blocks -->
+      <article>
+        <img class="img-fluid w-100" src="../../assets/image/img20-400.jpg" alt="Image Description">
+        <div class="g-width-80x g-bg-white g-pos-rel g-z-index-1 g-pa-30 g-mt-minus-50 mx-auto">
+          <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">31 May 2017</span>
+          <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+            <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">Announcing a free plan for small teams</a>
+          </h2>
+          <p class="g-color-gray-dark-v4 g-line-height-1_8">At Wake, our mission has always been focused on bringing openness and transparency.</p>
+          <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+        </div>
+      </article>
+      <!-- End Blog Grid Overlap Blocks -->
+    </div>
+
+    <div class="col-sm-6 col-lg-4 g-mb-30">
+      <!-- Blog Grid Overlap Blocks -->
+      <article>
+        <img class="img-fluid w-100" src="../../assets/image/img20-400.jpg" alt="Image Description">
+        <div class="g-width-80x g-bg-white g-pos-rel g-z-index-1 g-pa-30 g-mt-minus-50 mx-auto">
+          <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">1 June 2017</span>
+          <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+            <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">Exclusive interview with InVision's CEO</a>
+          </h2>
+          <p class="g-color-gray-dark-v4 g-line-height-1_8">Clark Valberg is the founder and CEO of InVision. If you are a designer...</p>
+          <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+        </div>
+      </article>
+      <!-- End Blog Grid Overlap Blocks -->
+    </div>
+
+    <div class="col-sm-6 col-lg-4 g-mb-30">
+      <!-- Blog Grid Overlap Blocks -->
+      <article>
+        <img class="img-fluid w-100" src="../../assets/image/img20-400.jpg" alt="Image Description">
+        <div class="g-width-80x g-bg-white g-pos-rel g-z-index-1 g-pa-30 g-mt-minus-50 mx-auto">
+          <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2">31 May 2017</span>
+          <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+            <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer" href="#">A UX strategy for the Ultimate Product Launch</a>
+          </h2>
+          <p class="g-color-gray-dark-v4 g-line-height-1_8">In an attempt to answer those questions, I poured over the biggest collections of design.</p>
+          <a class="g-font-size-12 text-uppercase g-font-weight-600 more" href="#">Read More</a>
+        </div>
+      </article>
+      <!-- End Blog Grid Overlap Blocks -->
+    </div>
+  </div>
+</section>
+
+<section class="g-bg-primary g-color-white g-pa-20" style="background-image: url(../../assets/image/pattern5.png);">
+    <div class="d-md-flex justify-content-md-center text-center">
+        <div class="align-self-md-center">
+            <p class="lead g-font-weight-400 g-mr-20--md g-mb-15 g-mb-0--md">We offer best in class service for your needs</p>
+        </div>
+        <div class="align-self-md-center">
+            <a class=" btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="#" (click)="modalService.callOpenLogin()">Get started</a>
+        </div>
+    </div>
+</section>

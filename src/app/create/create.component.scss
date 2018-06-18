@@ -1,0 +1,19 @@
+//@import url(../login/login.component.scss);
+$primary-color:#006e44;
+
+.window{
+  padding: 10px;
+  width: 300px;
+}
+
+.u-btn-primary{
+  background-color:$primary-color;
+}
+
+.main-color{
+  color:#72c02c;
+}
+
+.close:hover{
+  background-color:transparent;
+}

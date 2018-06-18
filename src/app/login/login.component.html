@@ -1,0 +1,38 @@
+<main>
+<div  id="openModal" class="modalDialog"  [ngClass]="{'open':popup}" (click)="$event.target.id == 'openModal' ? modalService.callCloseLogin() : void" >
+  <div *ngIf="modalState == 'login'" [@AnimationTop]='animationState'>
+    <form name="form" class="window window_small" (ngSubmit)="f.form.valid && onLogin()" #f="ngForm" novalidate>
+      <h3 class="align-center">Log in</h3>
+      <button type="button" class="close" (click)="modalService.callCloseLogin()">
+        <i class="hs-icon hs-icon-close"></i>
+      </button>
+      <div class="btn-column">
+        <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" name="username" [(ngModel)]="credentials.email" #username="ngModel" required placeholder="Username">
+        <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="password" name="password" [(ngModel)]="credentials.password" #password="ngModel" required placeholder="Password">
+      </div>
+      <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+
+    <button class="margin-min forgot" (click)="setState('forgot')">Forgot your password?</button>
+      <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+    <button [disabled]="loading" class="margin-min btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button">Send</button>
+    </form>
+  </div>
+
+  <div *ngIf="modalState == 'forgot'" >
+    <form class="window window_small" >
+      <h3 class="align-center">Recover password</h3>
+      <button type="button" class="close" (click)="modalService.callCloseLogin()">
+        <i class="hs-icon hs-icon-close"></i>
+      </button>
+      <div class="btn-column" >
+        <p>We will send you an email with instructions to get back into your account.</p>
+        <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="E-Mail">
+      </div>
+
+      <button class="margin-min btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button">Send Instructions</button>
+      <button class="margin-min forgot" (click)="setState('login')">Back to login</button>
+    </form>
+  </div>
+
+</div>
+</main>

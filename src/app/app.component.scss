@@ -1,0 +1,17 @@
+a {
+  cursor: pointer;
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.align-center{
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-text-center{
+    text-align:center;
+  }
+}

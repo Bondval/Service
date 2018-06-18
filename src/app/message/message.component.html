@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row messenger">
+    <div id="msgContainer" class="msg-container" >
+      <div class="msg-eschange">
+        <p>Eschange messages</p>
+          <div class="search-box">
+            <input type="text" class="form-control form-control-md rounded-0" placeholder="Search">
+          </div>
+      </div>
+      <ul class="friends-container">
+        <li *ngFor="let Infos of (InfoList); let i = index" class="d-flex select-profile">
+          <div class="image-profile">
+            <img alt="Image Description" class="d-flex g-width-50 g-height-50 rounded-circle" src="../../assets/image/img4-100.jpg">
+          </div>
+          <div class="min-msg">
+            <h6>{{Infos.firstName}} {{Infos.lastName}}</h6>
+            <p>{{Infos.firstName}} :"{{Infos.message}}..."</p>
+          </div>
+        </li>
+      </ul>
+    </div >
+    <div id="msgThread" class="msg-thread">
+      <div class="resizer"></div>
+      <div class="title-bar">
+        <p class="name-profile">Nadin Sidorenkova</p>
+      </div>
+      <div class="story-panel">
+        <div class="story-wrapper">
+          <ul>
+            <li *ngFor="let sms of (MsgList)">
+              <div class="message" [ngClass]="{myMessage:sms.member}">
+                <a *ngIf="!sms.member" class="ember-view">
+                  <img alt="Image Description" class="g-width-50 g-height-50 rounded-circle" src="../../assets/image/img4-100.jpg">
+                </a>
+                <div class="msg-s-message">
+                  <p class="msg-s-message-listitem">{{sms.text}}</p>
+                </div>
+                <div class="time-box">
+                  <time>12:48</time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="composer-panel form-control">
+        <div class="msg-composer-maxheight">
+          <textarea (keyup.enter)="onNewmsg($event)" [(ngModel)]="maintext" id="msgNew" rows="4" class="msg-composer-input msg-composer-input-large" style="display: inline-block; overflow: hidden; word-wrap: break-word; height: 100%;"></textarea>
+          <a (click)="onNewmsg($event)" class="btn btn-md u-btn-outline-primary g-mr-10 g-mb-15">Send</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

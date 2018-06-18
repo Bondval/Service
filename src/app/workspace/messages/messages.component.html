@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-5 msg-container">
+     <div class="msg-eschange">
+       <p>Eschange messages</p>
+       <input type="text" class="form-control form-control-md rounded-0" placeholder="Search">
+     </div>
+      <ul>
+        <li *ngFor="let Infos of (InfoList); let i = index" class="d-flex select-profile">
+          <div class="image-profile">
+            <img alt="Image Description" class="d-flex g-width-50 g-height-50 rounded-circle" src="../../assets/image/img4-100.jpg">
+          </div>
+          <div class="min-msg">
+            <h6>{{Infos.firstName}} {{Infos.lastName}}</h6>
+            <p>{{Infos.firstName}} :"{{Infos.message}}..."</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-7 msg-thread">
+      <div class="title-bar">
+        <p class="name-profile">Nadin Sidorenkova</p>
+      </div>
+      <div class="story-panel">
+
+      </div>
+      <div class="composer-panel form-control">
+          <div class="msg-composer-maxheight">
+            <textarea rows="4" class="msg-composer-input msg-composer-input-large"  style="display: block; overflow: hidden; word-wrap: break-word; height: 76px;"></textarea>
+          </div>
+          <div>
+            <button></button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

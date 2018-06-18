@@ -1,0 +1,74 @@
+.paid{
+  border:1px solid #72c02c;
+  overflow: auto;
+  padding:20px 30px;
+  h3{
+    text-align:center;
+    margin-bottom:20px;
+  }
+  .get-paid{
+    width:60%;
+    margin:0 auto;
+    a{
+      background-color: white;
+      border-color: #72c02c;
+      color: #72c02c;
+      width:100%;
+      &:hover{
+        color:white;
+      }
+    }
+  }
+}
+
+.payment{
+  display:flex;
+  margin-bottom: 25px;
+
+  p{
+    flex:0 1 25%;
+    margin:auto;
+  }
+  select{
+    flex:0 1 65%;
+    margin-right:10%;
+    option{
+      outline-color: #72c02c;
+    }
+    &:focus{
+      border-color:#72c02c;
+    }
+  }
+}
+
+.amount{
+  display:flex;
+  margin-bottom: 25px;
+  p{
+    flex:0 1 25%;
+    margin:auto;
+  }
+  .amount-select{
+    flex:0 1 75%;
+    align-self:center;
+    label{
+      width:100%;
+    }
+  }
+}
+
+.service-payment{
+  display:flex;
+  margin-bottom: 25px;
+  p{
+    flex:0 1 25%;
+    margin: auto;
+  }
+  .per-payment{
+    flex:0 1 75%;
+  }
+}
+
+
+
+

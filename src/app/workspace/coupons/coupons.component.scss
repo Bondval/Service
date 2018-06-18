@@ -1,0 +1,80 @@
+$btn-color:#006e44;
+
+#share{
+  max-width:50%;
+  border:1px solid #72c02c;
+  padding:20px;
+}
+
+.flex{
+ display:flex;
+}
+
+.invite{
+    width:49%;
+    border:1px solid #72c02c;
+    padding:20px;
+    text-align:center;
+}
+
+.bonuscode{
+  width: 90%;
+  border:1px solid #72c02c;
+  padding:5px;
+  &:focus{
+    outline-color: #72c02c;
+  }
+}
+
+.duo{
+  button{
+    vertical-align: top;
+    width:30%;
+    padding:7px 1rem;
+    border:1px solid $btn-color;
+    background-color:$btn-color ;
+    color:white;
+    border-radius:0;
+    border-left:0;
+    &:hover{
+      background-color: white;
+      color:$btn-color;
+      border:1px solid $btn-color;
+      border-left:0;
+    }
+  }
+
+  input{
+    border: 1px solid #72c02c;
+    width:70%;
+    padding:5px 1rem;
+    margin-right:-4px;
+    outline-color:#72c02c;
+  }
+}
+
+.form-group{
+  width:100%;
+}
+
+.btn-column{
+  h4{
+    text-align: center;
+  }
+  button{
+    width:50%;
+    display:inline-block;
+    border-radius:0;
+    border-color:$btn-color;
+    background-color: $btn-color;
+    &:hover{
+      background-color:white;
+      color:$btn-color;
+      border-color: $btn-color;
+    }
+    &:last-child{
+      margin-left:-4px;
+
+    }
+  }
+}

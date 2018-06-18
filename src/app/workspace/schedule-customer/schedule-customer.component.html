@@ -1,0 +1,356 @@
+<div class="provider-calendar-buttons">
+  <a class="btn-scroll btn-scrollleft disabled" (click)="onLeft()">←</a>
+  <a class="btn-scroll btn-scrollright" (click)="onRight()">→</a>
+</div>
+<div class="provider-calendar-viewport">
+  <div class="form-provider" id="calendar" [@AnimationRight]="party" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">-</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 1</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+        <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">4pm</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+        <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Mon. Oct 2</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked bold">-</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Tues. Oct 3</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Wed. Oct 4</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Thur. Oct 5</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Fri. Oct 6</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sat. Oct 7</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 8</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Mon. Oct 9</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Tues. Oct 10</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Wed. Oct 11</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Thur. Oct 12</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Fri. Oct 13</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sat. Oct 14</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 15</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Mon. Oct 16</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Tues. Oct 17</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Wed. Oct 18</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Thur. Oct 19</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Fri. Oct 20</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sat. Oct 21</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sun. Oct 22</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Mon. Oct 23</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Tues. Oct 24</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Wed. Oct 25</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Thur. Oct 26</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Fri. Oct 27</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+    <div class="provider-column">
+      <div class="provider-columndate">Sat. Oct 28</div>
+      <div class="slots scroller scrollbar-hover">
+        <div class="scrollbar"></div>
+
+        <div class="booked">Booked</div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

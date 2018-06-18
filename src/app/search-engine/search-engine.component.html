@@ -1,0 +1,63 @@
+<div class="search-engine">
+  <div>
+    <label>Street</label>
+    <input class="text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Street">
+  </div>
+  <div>
+    <label>Bedrooms</label>
+    <select class="form-control rounded-0 g-brd-primary--focus" >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6+</option>
+    </select>
+  </div>
+  <div>
+    <label>Bathrooms</label>
+    <select class="form-control rounded-0 g-brd-primary--focus" >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6+</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Service Level</label>
+    <select class="form-control rounded-0 g-brd-primary--focus">
+      <option>Light Clean</option>
+      <option>Standard Clean</option>
+      <option>New House</option>
+    </select>
+  </div>
+  <div class="extras">
+    <label>Extras</label>
+    <a href="#" class="full-width btn btn-lg u-btn-outline-primary g-mr-10 g-mb-15" (click)="togglePopup(true)">Select</a>
+  </div>
+  <div class="button-go">
+    <a href="#" class="full-width btn btn-lg u-btn-outline-primary u-btn-hover-v1-4 g-mr-10 g-mb-15">Go</a>
+  </div>
+
+  <!-- Extras popup -->
+  <div  id="openModal" class="modalDialog" [ngClass]="{open:popup}" (click)="$event.target.id == 'openModal' ? togglePopup(false) : void" >
+    <div  [@AnimationTop]='animationState'>
+      <form class="window window_small">
+        <h3 class="align-center">Select</h3>
+        <button type="button" class="close" (click)="togglePopup(false)">
+          <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+        <button class="margin-min custom-btn">Custom button</button>
+      </form>
+    </div>
+  </div>
+  <!-- End Extras popup -->
+
+
+</div>

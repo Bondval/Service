@@ -1,0 +1,75 @@
+<div class="provider-calendar-buttons">
+  <button class="btn-scroll btn-scrollleft" (click)="onLeft()">←</button>
+  <button class="btn-scroll btn-scrollright" (click)="onRight()">→</button>
+</div>
+<div class="provider-calendar-viewport">
+  <div class="form-provider" id="calendar" [@AnimationRight]="party" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+    <!--<button _ngcontent-c8="" type="button" class="${day.hours.isNine ? 'selected' : ''} btn u-btn-outline-primary timeslot" data-hour="16">09.00</button>-->
+    <!--<button _ngcontent-c8="" type="button" class="${day.hours.isTen ? 'selected' : ''} btn u-btn-outline-primary timeslot" data-hour="16">10.00</button>-->
+    <!--<button _ngcontent-c8="" type="button" class="${day.hours.isEleven ? 'selected' : ''} btn u-btn-outline-primary timeslot" data-hour="16">11.00</button>-->
+    <!--<button _ngcontent-c8="" type="button" class="${day.hours.isTwelve ? 'selected' : ''} btn u-btn-outline-primary timeslot" data-hour="16">12.00</button>{{this.datePipe.transform(this.currentDate, 'MMM')} {{this.datePipe.transform(this.currentDate, 'd')}-->
+
+    <div class="provider-column" *ngFor="let day of dayList; let i = index">
+     <!--<div class="hg90">-->
+      <div class="provider-columndate" [class.provider-columndate-active]="day === selectedDay" (click)="selectedDay == onSelectDay(day)" (dblclick)="selectedDay = null">{{day.date | date: 'EEE. MMM d'}}</div>
+      <div *ngIf="!selectedDay">
+        <div *ngFor="let time of day.orders">
+          <button type="button" class="add-time btn u-btn-outline-primary timeslot" data-hour="16">{{time.startTime}}</button>
+        </div>
+      </div>
+     <!--<div class="slots scroller scrollbar-hover">-->
+        <!--<div class="scrollbar"></div>-->
+        <!--<button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">+</button>-->
+      <!--</div> -->
+    <!--</div>-->
+      <!--<div class="hg10">-->
+      <!--<div class="edit-hours">-->
+        <!--<button type="button" class="btn u-btn-outline-primary timeslot" (click)="togglePopup(true)">Edit Schedule</button>-->
+      <!--</div>-->
+      <!--</div>-->
+    </div>
+  </div>
+  <div class="container-time">
+  <div class="item-container" *ngIf="selectedDay">
+    <div *ngFor="let item of hours; let i = index" class="item-time">
+      <button class="btn u-btn-outline-primary" [class.active-hours]="item.active" (click)="item.active = !item.active">{{item.time}},{{item.active}},{{item.locked}}</button>
+    </div>
+  </div>
+    <div class="flex-r" *ngIf="selectedDay">
+      <button class="btn u-btn-outline-primary" (click)="selectedDay = null">Save</button>
+      <button class="btn u-btn-outline-primary" (click)="selectedDay = null">Cancel</button>
+    </div>
+</div>
+</div>
+
+<!-- Extras popup -->
+<div  id="openModal" class="modalDialog" [ngClass]="{open:popup}" (click)="$event.target.id == 'openModal' ? togglePopup(false) : void" >
+  <div  [@AnimationRight]='animationState'>
+    <form class="window window_small">
+      <h3 class="align-center">Select Time Work</h3>
+      <button type="button" class="close" (click)="togglePopup(false)">
+        <i class="hs-icon hs-icon-close"></i>
+      </button>
+      <div>
+        <h2>Select day to edit :</h2>
+        <div class="select-time">
+          <button type="button" class="btn u-btn-outline-primary">Tuesday</button>
+          <button type="button" class="btn u-btn-outline-primary">Wednesday</button>
+          <button type="button" class="btn u-btn-outline-primary">Monday</button>
+          <button type="button" class="btn u-btn-outline-primary">Thursday</button>
+          <button type="button" class="btn u-btn-outline-primary">Friday</button>
+          <button type="button" class="btn u-btn-outline-primary">Saturday</button>
+          <button type="button" class="btn u-btn-outline-primary">Sunday</button>
+        </div>
+      </div>
+      <div>
+        <h2>Monday:</h2>
+
+      </div>
+      <div class="button-ok">
+        <button class="margin-min custom-btn" (click)="onWriteTime()">OK</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End Extras popup -->

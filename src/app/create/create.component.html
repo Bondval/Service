@@ -1,0 +1,43 @@
+<div  id="openModal" class="modalDialog" [ngClass]="{open:popup}" (click)="$event.target.id == 'openModal' ? modalService.callCloseSignUp() : void">
+  <div [@AnimationTop]="animationState">
+    <form class="window window_small" (ngSubmit)="f.form.valid && onSignup()" #f="ngForm" novalidate>
+      <h3 class="align-center">Create Account</h3>
+      <button type="button" class="close" (click)="modalService.callCloseSignUp()">
+        <i class="hs-icon hs-icon-close"></i>
+      </button>
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="First Name" name="firstName" [(ngModel)]="credentials.name" #firstName="ngModel" required>
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="Last Name" name="lastName" [(ngModel)]="credentials.last_name" #lastName="ngModel" required>
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="0-(000)-000-0000"  name="mobilePhone" [(ngModel)]="credentials.phone_number"  #mobilePhone="ngModel" required>
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="E-Mail" name="username" [(ngModel)]="credentials.email" #username="ngModel" required>
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="password" placeholder="Password" name="password" [(ngModel)]="credentials.password" #password="ngModel" required >
+      <input class="margin-min text form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15" type="password" placeholder="Confirm Password"  name="returnPassword" [(ngModel)]="credentials.repeat_password" #returnPassword="ngModel" required>
+      <!--<div>-->
+        <!--<input id="radio1" name="radio" type="radio"><p>cleaner</p>-->
+        <!--<input id="radio2" name="radio" type="radio"><p>customer</p>-->
+      <!--</div>-->
+
+      <!--<select class="margin-min  form-control rounded-0" id="exampleSelect1">-->
+        <!--<option>1</option>-->
+        <!--<option>2</option>-->
+        <!--<option>3</option>-->
+        <!--<option>4</option>-->
+        <!--<option>5</option>-->
+      <!--</select>-->
+      <!--<select class=" margin-min  form-control rounded-0" >-->
+        <!--<option>1</option>-->
+        <!--<option>2</option>-->
+        <!--<option>3</option>-->
+        <!--<option>4</option>-->
+        <!--<option>5</option>-->
+      <!--</select>-->
+      <button [disabled]="loading" class="margin-min btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button" (click)="onSignup()">Continue</button>
+      <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+      <div class="help-bottom align-center">By continuing you agree to our <a class="main-color" href="/#" target="_blank">terms</a>.</div>
+    </form>
+
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,103 @@
+$primary-color:#006e44;
+
+.window{
+  transition: transform .3s;
+  background: #fff;
+  padding: 10px;
+  width: 300px;
+}
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  overflow: auto;
+}
+
+.modalDialog:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+  color: grey;
+  outline-color:white;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 9px;
+  width: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover{
+    color:black;
+  }
+}
+
+.open{
+  display:block;
+}
+
+.text{
+  vertical-align: top;
+  border: 1px solid #c2c6cc;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.btn{
+  width:100%;
+}
+
+.margin-min{
+  margin: 10px 0;
+}
+
+.forgot{
+  &:focus{
+    outline-color: $primary-color;
+  }
+  color:$primary-color;
+  padding:10px 10px;
+  border: 1px solid $primary-color;
+  width:100%;
+  background-color:white;
+}
+
+.u-btn-primary{
+  background-color:$primary-color;
+}
+
+.main-color{
+  color:#72c02c;
+}
+
+@media screen and (max-width: 768px) {
+  .modalDialog > div{
+    width:100%;
+  }
+  .window{
+    width:100%;
+  }
+}

@@ -1,0 +1,7 @@
+<div dir="{{ 'dir' | translate }}" [class.rtl]="('dir' | translate) === 'rtl'" [class.ltr]="('dir' | translate) === 'ltr'">
+  <alert></alert>
+  <app-header (switchLanguage)="switchLanguage($event)"></app-header>
+  <router-outlet></router-outlet>
+  <app-scroll-top></app-scroll-top>
+  <app-footer></app-footer>
+</div>

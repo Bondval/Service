@@ -1,0 +1,1639 @@
+<div class="container">
+   <div class="row service-bar">
+     <div class="left col-md-4">
+      <strong>Standart House Cleaning</strong>
+      <div class="greytext">Entire Dimensions: 1 BD / 1 BA / 500 - 1000 sqft</div>
+     </div>
+
+     <div class="extras right col-md-8">
+      <button type="button" class="btn u-btn-outline-primary">Edit Service</button>
+     </div>
+   </div>
+  <div class="row filter-section">
+    <div class="col-lg-3 filter-box left">
+       <p><strong>House Cleaning</strong>in 3305</p>
+       <a (click)="onSort()">Sort</a>
+    </div>
+    <div class="col-lg-9 right">
+      <p>showing 1-5 of 84</p>
+    </div>
+  </div>
+  <hr  class="gray-line g-brd-gray-light-v4 g-my-15">
+  <div *ngIf="sorts" class="sort">
+    <select class="form-control rounded-0" id="exampleSelect1">
+      <option>Hux Sort</option>
+      <option>Best Rated</option>
+      <option>Most Availability</option>
+      <option>Most Recurring</option>
+      <option>Teams Only</option>
+    </select>
+    <input type="text" class="form-control form-control-md rounded-0" id="formGroupExampleInput" placeholder="Search Providers">
+  </div>
+  <div class="row person g-m">
+    <div class="col-lg-4">
+      <figure class="g-bg-white g-rounded-4 g-pa-20">
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-90 g-height-90 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-mb-5">
+              <h4 class="h5 g-mb-1">Mikel Andrews</h4>
+              <span>{{rating}}</span>
+              <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+                <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <span>({{reviews}})</span>
+            </div>
+            <!-- End Figure Info -->
+
+            <!-- Social Icons -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover g-ml-minus-15" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-instagram--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Social Icons -->
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-15">
+
+        <!-- Figure Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="h6 mb-0">Latest reviews</h4>
+          <a class="u-link-v5 g-brd-around g-brd-gray-light-v3 g-color-main g-color-primary--hover g-font-size-12 rounded g-px-10 g-py-5" routerLink="../profile">All reviews</a>
+        </div>
+        <!-- End Figure Title -->
+
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-50 g-height-50 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+              <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+              <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+
+            <div class="g-mb-5">
+              <h3 class="h6 g-font-weight-600 mb-1">
+                Leight L:"
+                <a class="g-color-main g-color-primary--hover" href="#">No text in review</a>"
+              </h3>
+              <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-12">Date: </em>
+              <a class="g-font-size-12" href="#">20 Jan 2016</a>
+            </div>
+            <!-- End Figure Info -->
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="provider-calendar col-lg-8">
+      <div class="provider-calendar-buttons">
+        <a class="btn-scroll btn-scrollleft disabled">←</a>
+        <a class="btn-scroll btn-scrollright">→</a>
+      </div>
+      <div class="provider-calendar-viewport">
+        <div class="provider-calendar-canvas grid" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 1</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 2</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 3</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 4</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 5</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 6</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 7</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 8</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 9</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 10</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 11</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 12</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 13</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 14</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 15</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 16</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 17</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 18</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 19</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 20</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 21</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 22</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 23</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 24</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 25</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 26</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 27</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 28</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row person g-m">
+    <div class="col-lg-4">
+      <figure class="g-bg-white g-rounded-4 g-pa-20">
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-90 g-height-90 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-mb-5">
+              <h4 class="h5 g-mb-1">Mikel Andrews</h4>
+              <span>{{rating}}</span>
+              <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+                <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <span>({{reviews}})</span>
+            </div>
+            <!-- End Figure Info -->
+
+            <!-- Social Icons -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover g-ml-minus-15" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-instagram--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Social Icons -->
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-15">
+
+        <!-- Figure Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="h6 mb-0">Latest reviews</h4>
+          <a class="u-link-v5 g-brd-around g-brd-gray-light-v3 g-color-main g-color-primary--hover g-font-size-12 rounded g-px-10 g-py-5" href="#">All reviews</a>
+        </div>
+        <!-- End Figure Title -->
+
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-50 g-height-50 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+              <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+
+            <div class="g-mb-5">
+              <h3 class="h6 g-font-weight-600 mb-1">
+                Leight L:"
+                <a class="g-color-main g-color-primary--hover" href="#">No text in review</a>"
+              </h3>
+              <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-12">Date: </em>
+              <a class="g-font-size-12" href="#">20 Jan 2016</a>
+            </div>
+            <!-- End Figure Info -->
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="provider-calendar col-lg-8">
+      <div class="provider-calendar-buttons">
+        <a class="btn-scroll btn-scrollleft disabled">←</a>
+        <a class="btn-scroll btn-scrollright">→</a>
+      </div>
+      <div class="provider-calendar-viewport">
+        <div class="provider-calendar-canvas grid" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 1</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 2</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 3</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 4</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 5</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 6</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 7</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 8</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 9</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 10</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 11</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 12</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 13</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 14</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 15</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 16</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 17</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 18</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 19</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 20</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 21</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 22</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 23</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 24</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 25</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 26</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 27</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 28</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row person g-m">
+    <div class="col-lg-4">
+      <figure class="g-bg-white g-rounded-4 g-pa-20">
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-90 g-height-90 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-mb-5">
+              <h4 class="h5 g-mb-1">Mikel Andrews</h4>
+              <span>{{rating}}</span>
+              <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+                <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <span>({{reviews}})</span>
+            </div>
+            <!-- End Figure Info -->
+
+            <!-- Social Icons -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover g-ml-minus-15" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-instagram--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Social Icons -->
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-15">
+
+        <!-- Figure Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="h6 mb-0">Latest reviews</h4>
+          <a class="u-link-v5 g-brd-around g-brd-gray-light-v3 g-color-main g-color-primary--hover g-font-size-12 rounded g-px-10 g-py-5" href="#">All reviews</a>
+        </div>
+        <!-- End Figure Title -->
+
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-50 g-height-50 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+              <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+
+            <div class="g-mb-5">
+              <h3 class="h6 g-font-weight-600 mb-1">
+                Leight L:"
+                <a class="g-color-main g-color-primary--hover" href="#">No text in review</a>"
+              </h3>
+              <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-12">Date: </em>
+              <a class="g-font-size-12" href="#">20 Jan 2016</a>
+            </div>
+            <!-- End Figure Info -->
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="provider-calendar col-lg-8">
+      <div class="provider-calendar-buttons">
+        <a class="btn-scroll btn-scrollleft disabled">←</a>
+        <a class="btn-scroll btn-scrollright">→</a>
+      </div>
+      <div class="provider-calendar-viewport">
+        <div class="provider-calendar-canvas grid" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 1</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 2</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 3</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 4</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 5</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 6</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 7</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 8</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 9</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 10</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 11</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 12</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 13</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 14</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 15</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 16</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 17</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 18</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 19</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 20</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 21</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 22</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 23</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 24</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 25</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 26</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 27</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 28</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row person g-m">
+    <div class="col-lg-4">
+      <figure class="g-bg-white g-rounded-4 g-pa-20">
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-90 g-height-90 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-mb-5">
+              <h4 class="h5 g-mb-1">Mikel Andrews</h4>
+              <span>{{rating}}</span>
+              <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+                <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+              <span>({{reviews}})</span>
+            </div>
+            <!-- End Figure Info -->
+
+            <!-- Social Icons -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-facebook--hover g-ml-minus-15" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-twitter--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-2">
+                <a class="u-icon-v1 u-icon-slide-up--hover g-color-gray-dark-v4 g-color-instagram--hover" href="#">
+                  <i class="g-font-size-default g-line-height-1 u-icon__elem-regular fa fa-instagram"></i>
+                  <i class="g-font-size-default g-line-height-0_8 u-icon__elem-hover fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Social Icons -->
+          </div>
+        </div>
+
+        <hr class="g-brd-gray-light-v4 g-my-15">
+
+        <!-- Figure Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="h6 mb-0">Latest reviews</h4>
+          <a class="u-link-v5 g-brd-around g-brd-gray-light-v3 g-color-main g-color-primary--hover g-font-size-12 rounded g-px-10 g-py-5" href="#">All reviews</a>
+        </div>
+        <!-- End Figure Title -->
+
+        <div class="d-flex justify-content-start">
+          <!-- Figure Image -->
+          <img class="g-width-50 g-height-50 rounded-circle g-mr-15" src="../../assets/image/img4-100.jpg" alt="Image Description">
+          <!-- Figure Image -->
+
+          <div class="d-block">
+            <!-- Figure Info -->
+            <div class="g-rating g-color-primary" style="display: inline-block; position: relative; z-index: 1; white-space: nowrap; margin-left: -2px; margin-right: -2px;">
+              <div class="g-rating-forward" style="position: absolute; left: 0px; top: 0px; height: 100%; overflow: hidden; width: 100%;">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="g-rating-backward" style="position: relative; z-index: 1;">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+
+            <div class="g-mb-5">
+              <h3 class="h6 g-font-weight-600 mb-1">
+                Leight L:"
+                <a class="g-color-main g-color-primary--hover" href="#">No text in review</a>"
+              </h3>
+              <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-12">Date: </em>
+              <a class="g-font-size-12" href="#">20 Jan 2016</a>
+            </div>
+            <!-- End Figure Info -->
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="provider-calendar col-lg-8">
+      <div class="provider-calendar-buttons">
+        <a class="btn-scroll btn-scrollleft disabled">←</a>
+        <a class="btn-scroll btn-scrollright">→</a>
+      </div>
+      <div class="provider-calendar-viewport">
+        <div class="provider-calendar-canvas grid" style="-webkit-transform:translateX(-0px); transform:translateX(-0px)">
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 1</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="u-btn-outline-primary btn timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+              <button type="button" class="btn u-btn-outline-primary timeslot" data-hour="16">4pm</button>
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 2</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 3</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 4</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 5</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 6</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 7</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 8</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 9</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 10</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 11</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 12</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 13</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 14</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 15</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 16</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 17</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 18</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 19</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 20</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 21</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sun. Oct 22</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Mon. Oct 23</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Tues. Oct 24</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Wed. Oct 25</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Thur. Oct 26</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Fri. Oct 27</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+          <div class="provider-column">
+            <div class="provider-columndate">Sat. Oct 28</div>
+            <div class="slots scroller scrollbar-hover">
+              <div class="scrollbar"></div>
+
+              <div class="booked">Booked</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-switch">
+    <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <i class="fa fa-angle-left g-mr-5"></i> Previous
+                  </span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="float-r u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-brd-primary--hover g-rounded-50 g-pa-7-16" href="#" aria-label="Next">
+                  <span aria-hidden="true">
+                    Next <i class="fa fa-angle-right g-ml-5"></i>
+                  </span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>

@@ -1,0 +1,87 @@
+.provider-informations{
+  display:flex;
+  align-items: center;
+}
+
+.person{
+  border:1px solid #eee;
+  margin: 50px 0;
+}
+
+.provider-informations{
+  border-bottom:1px solid #eee;
+}
+
+.review{
+  width:100%;
+}
+
+.provider-calendar-viewport{
+  height:100%;
+  overflow:hidden;
+  background-color:#eee;
+  white-space:nowrap;
+}
+
+.provider-column{
+  display: inline-block;
+  vertical-align: top;
+  width: 14%;
+  height: 100%;
+  text-align: center;
+  margin-right:-4px;
+}
+
+.slots{
+  position: relative;
+  overflow: hidden;
+  &:first-child{
+    margin-top:30px;
+  }
+  button{
+    width:90%;
+  }
+}
+
+.provider-calendar{
+  white-space: nowrap;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.provider-calendar-buttons{
+  position: absolute;
+  top: -27px;
+  width: 100%;
+  text-align: center;
+}
+
+.timeslot{
+  border:1px solid #72c02c;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+  margin-bottom: 19px;
+  width: 90px;
+}
+
+.extras{
+  button{
+    border:1px solid #72c02c;
+    width:150px;
+    height:40px;
+  }
+}
+
+.provider-columndate{
+  background-color:#72c02c;
+  color:white;
+  margin-bottom:20px;
+  padding:10px;
+}
+
+.form-provider{
+  width:102%;
+  height:100%;
+}
+
